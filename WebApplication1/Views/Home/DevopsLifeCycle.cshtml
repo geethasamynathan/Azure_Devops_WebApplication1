@@ -1,0 +1,76 @@
+﻿@{
+    ViewData["Title"] = "DevOps Lifecycle";
+    ViewData["ActiveMenu"] = "DevOps";
+}
+
+<div class="container mt-4">
+    <h1 class="text-center">DevOps Lifecycle</h1>
+    <p class="lead text-center">
+        The DevOps lifecycle represents a continuous process of development, integration, deployment, and monitoring. 
+        It ensures seamless collaboration between developers and IT operations to deliver high-quality software efficiently.
+    </p>
+
+    <div class="text-center">
+        <img src="~/css/image/devops-lifecycle.png" alt="DevOps Lifecycle" class="img-fluid rounded" height="450px" width="450px" />
+        <p class="text-muted">Image: The DevOps Lifecycle Stages</p>
+    </div>
+
+    <h2 class="mt-4">What is DevOps?</h2>
+    <p>
+        DevOps is a software development approach that integrates **Development (Dev)** and **Operations (Ops)** teams to improve collaboration, efficiency, and automation in software delivery. It follows a set of best practices and tools to streamline the development lifecycle.
+    </p>
+
+    <h2 class="mt-4">DevOps Lifecycle Stages</h2>
+    <p>The DevOps lifecycle consists of several interconnected stages that ensure continuous software delivery. Below are the key stages:</p>
+
+    <div class="row">
+        <div class="col-md-6">
+            <h3>1. Planning</h3>
+            <p>
+                This phase involves gathering requirements, setting goals, and planning the development process using tools like **JIRA, Confluence, or Trello**.
+            </p>
+          @*   <img src="~/images/planning.png" alt="DevOps Planning" class="img-fluid rounded" /> *@
+        </div>
+        <div class="col-md-6">
+            <h3>2. Development</h3>
+            <p>
+                Developers write and manage code using **Git, GitHub, GitLab, or Bitbucket**. They follow Agile methodologies and version control to maintain efficiency.
+            </p>
+           @*  <img src="~/images/development.png" alt="Development Phase" class="img-fluid rounded" /> *@
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <h3>3. Build & Integration</h3>
+            <p>
+                The source code is compiled and tested using **Jenkins, Maven, or Gradle**. Continuous Integration (CI) ensures that new code integrates seamlessly with the existing codebase.
+            </p>
+           @*  <img src="~/images/build-integration.png" alt="CI/CD Process" class="img-fluid rounded" /> *@
+        </div>
+        <div class="col-md-6">
+            <h3>4. Testing</h3>
+            <p>
+                Automated testing tools like **Selenium, JUnit, and TestNG** validate the software functionality, ensuring bug-free releases before deployment.
+            </p>
+@*             <img src="~/images/testing.png" alt="Testing in DevOps" class="img-fluid rounded" /> *@
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <h3>5. Deployment</h3>
+            <p>
+                The software is deployed to production using **Docker, Kubernetes, or Ansible** for containerization and orchestration.
+            </p>
+          @*   <img src="~/images/deployment.png" alt="Deployment in DevOps" class="img-fluid rounded" /> *@
+        </div>
+        <div class="col-md-6">
+            <h3>6. Operations & Monitoring</h3>
+            <p>
+                Monitoring tools like **Prometheus, Grafana, and ELK Stack** track application performance and ensure system reliability.
+            </p>
+           @*  <img src="~/images/monitoring.png" alt="Monitoring in DevOps" class="img-fluid rounded" />  *@
+        </div>
+    </div>
+</div>
